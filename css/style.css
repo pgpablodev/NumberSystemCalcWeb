@@ -1,0 +1,138 @@
+.container{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+.modebuttons{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.modebuttons > div{
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.modebutton{
+    border: 0.5px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.disabled{
+    border: 0.5px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #cecece;
+    font-size: 25px;
+    text-align: center;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+.modebutton:hover{
+    background-color: black;
+    color: white;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0px 0px 1px 1px rgba(153,153,153,1);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.buttons{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.button{
+    border: 0.5px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#equal{
+    background-color: #5555ff;
+    color: white;
+    font-size: 60px;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0px 0px 1px 1px rgba(153,153,153,1);
+}
+.span-twocol{
+    grid-column: span 2;
+}
+.span-threecol{
+    grid-column: span 3;
+}
+.span-fourcol{
+    grid-column: span 4;
+}
+.span-fractionrow{
+    grid-row: span 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.foot-element{
+    padding-top: 30px;
+    padding-left: 50%;
+}
+@media(min-width: 800px){
+    .foot-element{
+        padding-left: 95%;
+    }
+}
+
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent
+}
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
+}
+.noselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}

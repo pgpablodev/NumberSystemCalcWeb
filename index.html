@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de programador</title>
+    <link rel="icon" href="img/images.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css" media="" id="lightskin">
+    <link rel="stylesheet" href="css/dark.css"  media="none" id="darkskin">
+</head>
+<body class="noselect" id="page-body">
+    <section>
+        <div class="container">
+            <div class="modebuttons">
+                <div class="modebutton">HEX</div>
+                <div class="modebutton selected">DEC</div>
+                <div class="modebutton">OCT</div>
+                <div class="modebutton">BIN</div>
+            </div>
+            <div id="display"></div>
+            <div class="buttons">
+                <div id="A" class="button span-fractionrow">A</div>
+                <div class="button span-twocol">CE</div>
+                <div class="button span-twocol">←</div>
+                <div id="B" class="button span-fractionrow">B</div>
+                <div class="button non-binary">7</div>
+                <div class="button non-octal">8</div>
+                <div class="button non-octal">9</div>
+                <div class="button">÷</div>
+                <div id="C" class="button span-fractionrow">C</div>
+                <div class="button non-binary">4</div>
+                <div class="button non-binary">5</div>
+                <div class="button non-binary">6</div>
+                <div class="button">×</div>
+                <div id="D" class="button span-fractionrow">D</div>
+                <div class="button">1</div>
+                <div class="button non-binary">2</div>
+                <div class="button non-binary">3</div>
+                <div class="button">-</div>
+                <div id="E" class="button span-fractionrow">E</div>
+                <div class="button span-threecol">0</div>
+                <div class="button">+</div>
+                <div id="F" class="button span-fractionrow">F</div>
+                <div id="equal" class="button span-fourcol">=</div>
+            </div>
+        </div>
+    </section>
+    <div class="foot-element">
+        <div class="gg-moon"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
